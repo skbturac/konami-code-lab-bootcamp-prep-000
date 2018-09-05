@@ -20,19 +20,19 @@ const alphabet = ['a', 'b', 'c'];
 let index = 0;
  
 // This is the function that would be invoked by the event listener.
-function onKeyDownHandler(e) {
-  const key = e.key;
- 
-  if (key === alphabet[index]) {
-    index++;
- 
-    if (index === alphabet.length) {
-      window.alert("Hurray!");
- 
+  document.addEventListener('keydown', e => {
+    const key = e.key;
+   
+    if (key === alphabet[index]) {
+      index++;
+   
+      if (index === alphabet.length) {
+        window.alert("Hurray!");
+   
+        index = 0;
+      }
+    } else {
       index = 0;
     }
-  } else {
-    index = 0;
-  }
-}
+  })
 }
