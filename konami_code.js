@@ -20,7 +20,7 @@ const alphabet = ['a', 'b', 'c'];
 let index = 0;
  
 // This is the function that would be invoked by the event listener.
-  document.addEventListener('keydown', e => {
+  document.body.addEventListener('keydown', e => {
     const key = e.key;
    
     if (key === alphabet[index]) {
