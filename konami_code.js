@@ -23,7 +23,7 @@ let index = 0;
     if (key === codes[index]) {
       index++;
    
-      if (index === alphabet.length) {
+      if (index === codes.length) {
         window.alert("Hurray!");
    
         index = 0;
