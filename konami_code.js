@@ -20,7 +20,7 @@ let index = 0;
   document.body.addEventListener('keydown', e => {
     const key = e.key;
     window.alert("Hurray!");
-    if (key === alphabet[index]) {
+    if (key === codes[index]) {
       index++;
    
       if (index === alphabet.length) {
