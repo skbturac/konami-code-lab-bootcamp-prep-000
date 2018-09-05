@@ -21,7 +21,7 @@ let index = 0;
  
 // This is the function that would be invoked by the event listener.
   document.body.addEventListener('keydown', e => {
-    const key = e.key;
+    const key = "a";
     window.alert("Hurray!");
     if (key === alphabet[index]) {
       index++;
